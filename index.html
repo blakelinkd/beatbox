@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <template id="click-box-template">
+    <div class="click-box"></div>
+  </template>
+  <body>
+    
+    <!-- Time Needle, shows a vertical line representing the time from 0 to 24 hours -->
+    <div class="graph">
+        <div class="needle">
+
+        </div>
+            <div class="block" hidden="true"></div>
+            <div class="block block-empty" hidden="true"></div>
+
+    </div>
+
+    <div class="popup" hidden="true">
+
+            <div>
+              <label for="name">Text Input:</label>
+              <input type="text" name="name" id="name" value="" tabindex="1">
+             </div>
+          
+             
+          
+            <div>
+              <label for="select-choice">Select Dropdown Choice:</label>
+              <select name="select-choice" id="select-choice">
+                <option value="Choice 1">Choice 1</option>
+                <option value="Choice 2">Choice 2</option>
+                <option value="Choice 3">Choice 3</option>
+              </select>
+            </div>
+              
+            <div>
+              <label for="textarea">Textarea:</label>
+              <textarea style="display: block" cols="40" rows="8" name="textarea" id="textarea"></textarea>
+            </div>
+              
+            <div>
+              <input type="submit" value="Submit" id="form-input-button">
+            </div>
+          
+    </div>
+    <script src="needle.js"></script>
+    <script type="module" src="block.js"></script>
+    
+    <script type="module" src="main.js"></script>
+
+    
+</body>
+</html>
